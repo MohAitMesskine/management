@@ -11,20 +11,20 @@
             </div>
           </div>
           <div class="user-info-list">
-            上次登陆时间：
+            USER：
             <span>2019-11-01</span>
           </div>
           <div class="user-info-list">
-            上次登录地点：
-            <span>东莞</span>
+            USER：
+            <span>MOHAMED</span>
           </div>
         </el-card>
         <el-card class="lang-card">
           <template #header>
-            <div>语言详情</div>
+            <div>Les Longuages</div>
           </template>
           <div class="lang-radio" v-for="item in languageInfo" :key="item.name">
-            <div>{{item.name}}</div>
+            <div>{{item.name}} </div>
             <el-progress :percentage="item.percentage" :color="item.color"></el-progress>
           </div>
         </el-card>
@@ -48,8 +48,8 @@
         <el-row>
           <el-card class="todo-card">
             <template #header>
-              <span class="todo-title">待办事项</span>
-              <button class="todo-btn">添加</button>
+              <span class="todo-title">todo-titre</span>
+              <button class="todo-btn">todo-btn</button>
             </template>
             <el-table :show-header="false" :data="todoList" style="width: 100%" :cell-style="{padding: '4px 0'}">
               <el-table-column width="40">
@@ -121,26 +121,26 @@ export default {
         {
           icon: "el-icon-user-solid",
           number: 1234,
-          name: '用户访问量',
+          name: 'Icon-user-solide',
           textColor: '#2D8CF0'
         },
         {
           icon: "el-icon-message-solid",
           number: 321,
-          name: '系统消息',
+          name: 'el-icon-message-solid',
           textColor: '#64D572'
         },
         {
           icon: "el-icon-s-goods",
           number: 5000,
-          name: '数量',
+          name: 'el-icon-s-goods',
           textColor: '#F25E43'
         }
       ],
       todoList: [
         {
           checked: true,
-          todo: '今天要修复2个bug'
+          todo: 'Todo 1'
         },
         {
           checked: false,
@@ -166,7 +166,7 @@ export default {
       // 柱状图数据
       barOptions: {
         title: {
-          text: '最近一周各品类销售图',
+          text: 'barOptions',
           textStyle: {
             fontSize: 20
           },
@@ -399,7 +399,7 @@ export default {
   created() {
     // 判断用户，更改用户数据显示
     this.userData.name = localStorage.getItem('ms_username');
-    this.userData.role = this.userData.name === "admin" ? "超级管理员" : "普通用户";
+    this.userData.role = this.userData.name === "admin" ? "admin" : "admin";
   },
   mounted() {
     //实例化echarts对象（确保DOM元素已经挂载到页面中）

@@ -20,7 +20,7 @@ const routes = [
         path: "/dashboard",
         name: "dashboard",
         meta: {
-          title: '首页'
+          title: 'dashboard'
         },
         component: () => import('../views/Dashboard')
       },
@@ -28,7 +28,7 @@ const routes = [
         path: "/user",
         name: "user",
         meta: {
-          title: '个人中心'
+          title: 'user'
         },
         component: () => import('../views/User')
       },
@@ -36,7 +36,7 @@ const routes = [
         path: "/table",
         name: "table",
         meta: {
-          title: '基础表格'
+          title: 'table'
         },
         component: () => import('../views/Table')
       },
@@ -44,7 +44,7 @@ const routes = [
         path: "/tabs",
         name: "tabs",
         meta: {
-          title: 'tab选项卡'
+          title: 'tabs'
         },
         component: () => import('../views/User')
       },
@@ -68,7 +68,7 @@ const routes = [
         path: "/editor",
         name: "editor",
         meta: {
-          title: '富文本编辑'
+          title: 'editor'
         },
         component: () => import('../views/User')
       },
@@ -76,7 +76,7 @@ const routes = [
         path: "/icon",
         name: "icon",
         meta: {
-          title: '图标'
+          title: 'icon'
         },
         component: () => import('../views/User')
       },
@@ -84,7 +84,7 @@ const routes = [
         path: "/charts",
         name: "charts",
         meta: {
-          title: '图表'
+          title: 'charts'
         },
         component: () => import('../views/User')
       },
@@ -92,7 +92,7 @@ const routes = [
         path: "/i18n",
         name: "i18n",
         meta: {
-          title: '国际化功能'
+          title: 'i18n'
         },
         component: () => import('../views/User')
       },
@@ -100,7 +100,7 @@ const routes = [
         path: "/permission",
         name: "permission",
         meta: {
-          title: '权限测试'
+          title: 'permission'
         },
         component: () => import('../views/User')
       }
@@ -111,7 +111,7 @@ const routes = [
     name: 'Login',
     // meta 元数据字段，在这里设自定义信息
     meta: {
-      title: '登录'
+      title: 'login'
     },
     // 路由懒加载（按需加载路由对应的资源）
     component: () => import('../views/Login.vue')
@@ -125,7 +125,7 @@ const router = createRouter({
 //全局前置守卫，用于在路由配置生效之前进行一些动作
 router.beforeEach((to, from, next) => {
   // 修改网页标题
-  document.title = `${to.meta.title} | management`
+  document.title = `${to.meta.title} | aitmesskine`
   //获取用户名
   const role = localStorage.getItem('ms_username');
   if(!role && to.path !== '/login') {

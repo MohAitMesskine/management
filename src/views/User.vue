@@ -1,26 +1,16 @@
 <template>
-<div>
-  <h1>user</h1>
-  <h1>user</h1>
-  <h1>user</h1>
-  <h1>user</h1>
-  <h1>user</h1>
-  <h1>user</h1>
-  <h1>user</h1>
-  <h1>user</h1>
-  <h1>user</h1>
-  <h1>user</h1>
-  <h1>user</h1>
-  <h1>user</h1>
+<div :style="false? style : 'background-color:red;'">
+ Page users
+  h
 </div>
 </template>
 
-<script>
-export default {
-  name: "User"
-}
+
+<script setup>
+const style = "background-color:green;"
 </script>
 
 <style scoped>
 
 </style>
+

@@ -18,7 +18,7 @@
 </template>
 
 <script>
-// 引入基础组件
+// Import les views
 import Header from '../components/Header';
 import Sidebar from "../components/Sidebar";
 import Tag from "../components/Tag"

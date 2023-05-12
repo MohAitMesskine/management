@@ -4,7 +4,7 @@
       <div v-if="!collapse" class="el-icon-s-unfold"></div>
       <div v-else class="el-icon-s-fold"></div>
     </div>
-    <div class="title">后台管理系统</div>
+    <div class="title">HEADER</div>
     <div class="header-right">
       <!--  消息提醒    -->
       <div class="message el-icon-bell"></div>
@@ -19,9 +19,9 @@
         </span>
         <template #dropdown>
           <el-dropdown-menu>
-            <a href="https://github.com/zjing272/management" target="_blank"><el-dropdown-item>项目仓库</el-dropdown-item></a>
-            <el-dropdown-item command="user">个人中心</el-dropdown-item>
-            <el-dropdown-item command="loginOut">退出登录</el-dropdown-item>
+            <a href="https://github.com/zjing272/management" target="_blank"><el-dropdown-item>github</el-dropdown-item></a>
+            <el-dropdown-item command="user">user</el-dropdown-item>
+            <el-dropdown-item command="loginOut">loginOut</el-dropdown-item>
           </el-dropdown-menu>
         </template>
       </el-dropdown>

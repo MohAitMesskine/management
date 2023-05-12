@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="ms-login">
-      <div class="ms-title">后台管理系统</div>
+      <div class="ms-title">Login</div>
       <el-form ref="login" :model="param" :rules="rules" class="ms-content" >
         <el-form-item prop="username">
           <el-input placeholder="username" v-model="param.username">
@@ -14,11 +14,12 @@
             <template #prepend><el-button icon="el-icon-lock"/></template>
           </el-input>
         </el-form-item>
-        <div class="login-btn" @click="submitForm"><el-button type="primary">登录</el-button></div>
-        <p class="login-tips">Tips：用户名密码随便填写</p>
+        <div class="login-btn" @click="submitForm"><el-button type="primary">submit</el-button></div>
+        <p class="login-tips">saisir votre information </p>
       </el-form>
     </div>
   </div>
+  
 </template>
 
 <script>
@@ -35,14 +36,14 @@ export default {
         username: [
           {
             required: true,
-            message: '请输入用户名',
+            message: 'saisir votre username',
             trigger: 'blur'
           }
         ],
         password: [
           {
             required: true,
-            message: '请输入密码',
+            message: 'saisir votre password',
             trigger: 'blur'
           }
         ]
@@ -54,12 +55,12 @@ export default {
       let {username, password} = this.param;
       if(username && password) {
         //全局引入element后，element已经在app.config.globalProperties添加了全局方法$message
-        this.$message.success("登录成功");
+        this.$message.success("bienvenu ");
         // alert('登录成功！');
         localStorage.setItem('ms_username', username);
         this.$router.push("/")
       } else {
-        this.$message.error("请输入用户名和密码");
+        this.$message.error("saisir votre informations");
       }
     }
   }

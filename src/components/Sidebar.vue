@@ -48,38 +48,38 @@ export default {
         {
           icon: "el-icon-house",
           index: "/dashboard",
-          title: "系统首页",
+          title: "acceuil",
         },
         {
           icon: "el-icon-tickets",
           index: "/table",
-          title: "基础表格",
+          title: "table",
         },
         {
           icon: "el-icon-document-copy",
           index: "/tabs",
-          title: "tab选项卡",
+          title: "icon-document",
         },
         {
           icon: "el-icon-notebook-2",
           index: "3",
-          title: "表单相关",
+          title: "icon notebook",
           subs: [
             {
               index: "/form",
-              title: "基本表单",
+              title: "form",
             },
             {
               index: "/upload",
-              title: "文件上传",
+              title: "upload",
             },
             {
               index: "4",
-              title: "三级菜单",
+              title: "4",
               subs: [
                 {
                   index: "/editor",
-                  title: "富文本编辑器",
+                  title: "modificateur",
                 },
               ],
             },
@@ -88,30 +88,30 @@ export default {
         {
           icon: "el-icon-thumb",
           index: "/icon",
-          title: "自定义图标",
+          title: "/icon",
         },
         {
           icon: "el-icon-pie-chart",
           index: "/charts",
-          title: "schart图表",
+          title: "charts",
         },
         {
           icon: "el-icon-basketball",
           index: "/i18n",
-          title: "国际化功能",
+          title: "icon-basketball",
         },
         {
           icon: "el-icon-warning-outline",
           index: "7",
-          title: "错误处理",
+          title: "warning-outline",
           subs: [
             {
               index: "/permission",
-              title: "权限测试",
+              title: "permission",
             },
             {
               index: "/404",
-              title: "404页面",
+              title: "404",
             },
           ],
         }
